@@ -1,5 +1,6 @@
 # Directory info.
-local current_dir='${PWD/#$HOME/~} '
+# %{$fg[green]%}[%n]  展示用户名
+local current_dir='${PWD/#$HOME/~} %{$fg[green]%}[%n] '
 
 # ret status
 local ret_status="(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
